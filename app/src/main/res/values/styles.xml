@@ -1,0 +1,59 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.AppCompat.NoActionBar.BaseStyle" tools:targetApi="kitkat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="Hide">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:elevation" tools:targetApi="lollipop">0dp</item>
+    </style>
+
+    <style name="FabButton">
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="FabButton.Option">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:elevation" tools:ignore="NewApi">6dp</item>
+    </style>
+
+    <style name="FabButton.Action">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+    </style>
+
+    <style name="FabButton.Action.Enable">
+        <item name="android:visibility">visible</item>
+        <item name="android:elevation" tools:ignore="NewApi">6dp</item>
+        <item name="android:alpha">1</item>
+    </style>
+
+    <style name="FabButton.Action.Disable">
+        <item name="android:visibility">invisible</item>
+        <item name="android:elevation" tools:ignore="NewApi">0dp</item>
+        <item name="android:alpha">0</item>
+    </style>
+
+    <style name="OptionLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/option_label_background</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

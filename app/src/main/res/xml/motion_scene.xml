@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:motion="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:targetApi="lollipop">
+
+    <Transition
+            motion:constraintSetEnd="@id/end"
+            motion:constraintSetStart="@id/start"
+            motion:interpolator="easeInOut"
+            motion:duration="200">
+
+        <OnClick motion:target="@id/view_motion"/>
+
+        <OnClick motion:target="@id/view_motion_disable"/>
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+                android:id="@id/sample_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                motion:layout_constraintTop_toTopOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintBottom_toBottomOf="parent"/>
+
+        <Constraint
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                motion:layout_constraintTop_toTopOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                android:visibility="invisible"
+                android:alpha="0"
+                android:id="@id/background_blur"/>
+
+        <Constraint
+                android:id="@id/view_motion"
+                style="@style/FabButton.Action.Enable"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:rotation="0"
+        />
+
+        <Constraint
+                android:id="@id/view_motion_disable"
+                style="@style/FabButton.Action.Disable"
+                motion:layout_constraintTop_toTopOf="@id/view_motion"
+                motion:layout_constraintEnd_toEndOf="@id/view_motion"
+                motion:layout_constraintStart_toStartOf="@id/view_motion"
+                motion:layout_constraintBottom_toBottomOf="@id/view_motion"
+                android:rotation="0"
+        />
+
+        <Constraint
+                android:id="@id/motion1"
+                style="@style/Hide"
+                motion:layout_constraintTop_toTopOf="@id/view_motion"
+                motion:layout_constraintEnd_toEndOf="@id/view_motion"
+                motion:layout_constraintStart_toStartOf="@id/view_motion"
+                motion:layout_constraintBottom_toBottomOf="@id/view_motion"
+                android:rotation="-180"/>
+
+        <Constraint
+                android:id="@id/motion1_label"
+                style="@style/Hide"
+                motion:layout_constraintTop_toTopOf="@id/motion1"
+                motion:layout_constraintEnd_toStartOf="@id/motion1"
+                motion:layout_constraintStart_toStartOf="@id/motion1"
+                motion:layout_constraintBottom_toBottomOf="@id/motion1"/>
+
+        <Constraint
+                android:id="@id/motion2"
+                style="@style/Hide"
+                motion:layout_constraintTop_toTopOf="@id/view_motion"
+                motion:layout_constraintEnd_toEndOf="@id/view_motion"
+                motion:layout_constraintStart_toStartOf="@id/view_motion"
+                motion:layout_constraintBottom_toBottomOf="@id/view_motion"
+                android:rotation="-180"/>
+
+        <Constraint
+                android:id="@id/motion2_label"
+                style="@style/Hide"
+                motion:layout_constraintTop_toTopOf="@id/motion2"
+                motion:layout_constraintEnd_toStartOf="@id/motion2"
+                motion:layout_constraintStart_toStartOf="@id/motion2"
+                motion:layout_constraintBottom_toBottomOf="@id/motion2"/>
+
+        <Constraint
+                android:id="@id/motion3"
+                style="@style/Hide"
+                motion:layout_constraintTop_toTopOf="@id/view_motion"
+                motion:layout_constraintEnd_toEndOf="@id/view_motion"
+                motion:layout_constraintStart_toStartOf="@id/view_motion"
+                motion:layout_constraintBottom_toBottomOf="@id/view_motion"
+                android:rotation="-180"/>
+
+        <Constraint
+                android:id="@id/motion3_label"
+                style="@style/Hide"
+                motion:layout_constraintTop_toTopOf="@id/motion3"
+                motion:layout_constraintEnd_toStartOf="@id/motion3"
+                motion:layout_constraintStart_toStartOf="@id/motion3"
+                motion:layout_constraintBottom_toBottomOf="@id/motion3"/>
+
+        <Constraint
+                android:id="@id/motion4"
+                style="@style/Hide"
+                motion:layout_constraintTop_toTopOf="@id/view_motion"
+                motion:layout_constraintEnd_toEndOf="@id/view_motion"
+                motion:layout_constraintStart_toStartOf="@id/view_motion"
+                motion:layout_constraintBottom_toBottomOf="@id/view_motion"
+                android:rotation="-180"/>
+
+        <Constraint
+                android:id="@id/motion4_label"
+                style="@style/Hide"
+                motion:layout_constraintTop_toTopOf="@id/motion4"
+                motion:layout_constraintEnd_toStartOf="@id/motion4"
+                motion:layout_constraintStart_toStartOf="@id/motion4"
+                motion:layout_constraintBottom_toBottomOf="@id/motion4"/>
+
+        <Constraint
+                android:id="@id/motion5"
+                style="@style/Hide"
+                motion:layout_constraintTop_toTopOf="@id/view_motion"
+                motion:layout_constraintEnd_toEndOf="@id/view_motion"
+                motion:layout_constraintStart_toStartOf="@id/view_motion"
+                motion:layout_constraintBottom_toBottomOf="@id/view_motion"
+                android:rotation="-180"/>
+
+        <Constraint
+                android:id="@id/motion5_label"
+                style="@style/Hide"
+                motion:layout_constraintTop_toTopOf="@id/motion5"
+                motion:layout_constraintEnd_toStartOf="@id/motion5"
+                motion:layout_constraintStart_toStartOf="@id/motion5"
+                motion:layout_constraintBottom_toBottomOf="@id/motion5"/>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+                android:id="@id/sample_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                motion:layout_constraintTop_toTopOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintBottom_toBottomOf="parent"/>
+
+        <Constraint
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                motion:layout_constraintTop_toTopOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                android:alpha="0.8"
+                android:id="@id/background_blur"/>
+
+        <Constraint
+                android:id="@id/view_motion"
+                style="@style/FabButton.Action.Disable"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:rotation="45"/>
+
+        <Constraint
+                android:id="@id/view_motion_disable"
+                style="@style/FabButton.Action.Enable"
+                motion:layout_constraintTop_toTopOf="@id/view_motion"
+                motion:layout_constraintEnd_toEndOf="@id/view_motion"
+                motion:layout_constraintStart_toStartOf="@id/view_motion"
+                motion:layout_constraintBottom_toBottomOf="@id/view_motion"
+                android:rotation="45"/>
+
+        <Constraint
+                android:id="@id/motion1"
+                style="@style/FabButton.Option"
+                android:layout_marginBottom="28dp"
+                motion:layout_constraintBottom_toTopOf="@+id/view_motion"
+                motion:layout_constraintEnd_toEndOf="@id/view_motion"
+                motion:layout_constraintStart_toStartOf="@id/view_motion"/>
+
+        <Constraint
+                android:id="@id/motion1_label"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                motion:layout_constraintTop_toTopOf="@id/motion1"
+                motion:layout_constraintEnd_toStartOf="@id/motion1"
+                motion:layout_constraintBottom_toBottomOf="@id/motion1"
+                android:elevation="6dp"/>
+
+        <Constraint
+                android:id="@id/motion2"
+                style="@style/FabButton.Option"
+                motion:layout_constraintBottom_toTopOf="@+id/motion1"
+                motion:layout_constraintEnd_toEndOf="@id/view_motion"
+                motion:layout_constraintStart_toStartOf="@id/view_motion"/>
+
+        <Constraint
+                android:id="@id/motion2_label"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                motion:layout_constraintTop_toTopOf="@id/motion2"
+                motion:layout_constraintEnd_toStartOf="@id/motion2"
+                motion:layout_constraintBottom_toBottomOf="@id/motion2"
+                android:elevation="6dp"/>
+
+        <Constraint
+                android:id="@id/motion3"
+                style="@style/FabButton.Option"
+                motion:layout_constraintBottom_toTopOf="@+id/motion2"
+                motion:layout_constraintEnd_toEndOf="@id/view_motion"
+                motion:layout_constraintStart_toStartOf="@id/view_motion"/>
+
+
+        <Constraint
+                android:id="@id/motion3_label"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                motion:layout_constraintTop_toTopOf="@id/motion3"
+                motion:layout_constraintEnd_toStartOf="@id/motion3"
+                motion:layout_constraintBottom_toBottomOf="@id/motion3"
+                android:elevation="6dp"/>
+
+        <Constraint
+                android:id="@id/motion4"
+                style="@style/FabButton.Option"
+                motion:layout_constraintBottom_toTopOf="@+id/motion3"
+                motion:layout_constraintEnd_toEndOf="@id/view_motion"
+                motion:layout_constraintStart_toStartOf="@id/view_motion"/>
+
+
+        <Constraint
+                android:id="@id/motion4_label"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                motion:layout_constraintTop_toTopOf="@id/motion4"
+                motion:layout_constraintEnd_toStartOf="@id/motion4"
+                motion:layout_constraintBottom_toBottomOf="@id/motion4"
+                android:elevation="6dp"/>
+
+        <Constraint
+                android:id="@id/motion5"
+                style="@style/FabButton.Option"
+                motion:layout_constraintBottom_toTopOf="@+id/motion4"
+                motion:layout_constraintEnd_toEndOf="@id/view_motion"
+                motion:layout_constraintStart_toStartOf="@id/view_motion"/>
+
+        <Constraint
+                android:id="@id/motion5_label"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                motion:layout_constraintTop_toTopOf="@id/motion5"
+                motion:layout_constraintEnd_toStartOf="@id/motion5"
+                motion:layout_constraintBottom_toBottomOf="@id/motion5"
+                android:elevation="6dp"/>
+
+    </ConstraintSet>
+
+</MotionScene>

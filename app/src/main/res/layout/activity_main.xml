@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.motion.MotionLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/motion_scene">
+
+
+
+    <ImageView
+            android:id="@+id/sample_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/griffith"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <View
+            android:id="@+id/background_blur"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:background="@android:color/background_light"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/motion5"
+            style="@style/FabButton.Option"
+            app:backgroundTint="@color/colorAccent"
+            app:srcCompat="@drawable/ic_option_motorcycle"/>
+
+    <TextView
+            android:id="@+id/motion5_label"
+            style="@style/OptionLabel"
+            android:text="Take a rental motor bike"/>
+
+    <android.support.design.widget.FloatingActionButton
+            style="@style/FabButton.Option"
+            android:id="@+id/motion4"
+            app:backgroundTint="@color/colorAccent"
+            app:srcCompat="@drawable/ic_option_walk"/>
+
+    <TextView
+            android:id="@+id/motion4_label"
+            style="@style/OptionLabel"
+            android:text="Go on foot"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/motion3"
+            style="@style/FabButton.Option"
+            app:backgroundTint="@color/colorAccent"
+            app:srcCompat="@drawable/ic_option_bus"/>
+
+    <TextView
+            android:id="@+id/motion3_label"
+            style="@style/OptionLabel"
+            android:text="Take a public bus"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/motion2"
+            style="@style/FabButton.Option"
+            app:backgroundTint="@color/colorAccent"
+            app:srcCompat="@drawable/ic_option_railway"/>
+
+    <TextView
+            android:id="@+id/motion2_label"
+            style="@style/OptionLabel"
+            android:text="Ride railway"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/motion1"
+            style="@style/FabButton.Option"
+            app:backgroundTint="@color/colorAccent"
+            app:srcCompat="@drawable/ic_option_boat"/>
+
+    <TextView
+            android:id="@+id/motion1_label"
+            style="@style/OptionLabel"
+            android:text="Use boat via a port"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/view_motion"
+            style="@style/FabButton.Action"
+            app:srcCompat="@drawable/ic_action_white"
+            app:backgroundTint="@color/colorAccent"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/view_motion_disable"
+            style="@style/FabButton.Action"
+            app:srcCompat="@drawable/ic_action_blue"
+            app:backgroundTint="@color/colorPrimary"/>
+
+</android.support.constraint.motion.MotionLayout>
