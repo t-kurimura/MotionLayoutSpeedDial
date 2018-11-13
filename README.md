@@ -6,7 +6,10 @@ All MotionLayout of SpeedDial - FloatingActionButton
 MotionLayout
 ------------
 
-MotionLayout is a new class available in the ConstraintLayout 2.0 library to help Android developers manage motion and widget animation in their application.
+> MotionLayout is a new class available in the ConstraintLayout 2.0 library to help Android developers manage motion and widget animation in their application.
+
+https://medium.com/google-developers/introduction-to-motionlayout-part-i-29208674b10d
+
 
 
 Speed-Dial
