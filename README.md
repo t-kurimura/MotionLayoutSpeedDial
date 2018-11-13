@@ -21,9 +21,7 @@ https://material.io/design/components/buttons-floating-action-button.html#types-
 
 Demo
 ------------
-|  |
-| --- |
-| ![demo](https://github.com/t-kurimura/MotionLayoutSpeedDial/blob/master/captures/motion_layout_speed_dial.gif?raw=true) |
+![demo](https://github.com/t-kurimura/MotionLayoutSpeedDial/blob/master/captures/motion_layout_speed_dial.gif?raw=true | width=250)
 
 
 License
