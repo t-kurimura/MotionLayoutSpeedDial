@@ -15,6 +15,11 @@
 
         <OnClick motion:target="@id/view_motion_disable"/>
 
+        <OnSwipe
+            motion:touchAnchorId="@id/motion5_label"
+            motion:touchAnchorSide="bottom"
+            motion:dragDirection="dragUp"/>
+
     </Transition>
 
     <ConstraintSet android:id="@+id/start">

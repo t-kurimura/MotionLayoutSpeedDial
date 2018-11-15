@@ -22,7 +22,10 @@ https://material.io/design/components/buttons-floating-action-button.html#types-
 Demo
 ------------
 
-<img src="https://github.com/t-kurimura/MotionLayoutSpeedDial/blob/master/captures/motion_layout_speed_dial.gif?raw=true" width="280">
+| Click | Swipe |
+| --- | ---  |
+|  <img src="https://github.com/t-kurimura/MotionLayoutSpeedDial/blob/master/captures/motion_layout_speed_dial_click.gif?raw=true" width="280"> | <img src="https://github.com/t-kurimura/MotionLayoutSpeedDial/blob/master/captures/motion_layout_speed_dial_swipe.gif?raw=true" width="280"> |
+
 
 License
 ------------
