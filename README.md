@@ -1,7 +1,9 @@
 MotionLayout Speed-Dial
 ================
 
-All MotionLayout of SpeedDial - FloatingActionButton
+This is the SpeedDial composed of All MotionLayout. No animation code!
+Sample for implementation of MotionLayout, FlaotingActionButton.
+
 
 MotionLayout
 ------------
